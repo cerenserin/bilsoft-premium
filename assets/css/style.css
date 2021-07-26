@@ -1879,3 +1879,19 @@ color: white;
 #support-table{
   font-size: 14px;
 }
+
+
+/* Hemen İndir */
+
+
+#hemenindir{
+  background-color:#30d5c8;
+  color: white;
+  font-size:medium;
+  border-radius: 25px;
+}
+
+#hemenindir:hover{
+  background-color:#9e0059;
+  color: rgb(255, 255, 255);
+}
