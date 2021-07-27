@@ -119,7 +119,7 @@ span {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #30d5c8;
+  background: #00b7b3;
   line-height: 1;
   color: #fff;
   padding: 7px 12px 13px 12px;
@@ -143,7 +143,7 @@ span {
 }
 
 .back-to-top:hover {
-  background: #9e0059;
+  background: #450d87;
   color: #fff;
 }
 
@@ -287,7 +287,7 @@ span {
 }
 
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {
-  color: #9e0059;
+  color: #450d87;
   font-weight: bold;
 }
 
@@ -316,7 +316,7 @@ span {
 }
 
 .nav-menu ul li:hover > a {
-  color: #9e0059;
+  color: #450d87;
 }
 
 .nav-menu ul ul {
@@ -388,16 +388,16 @@ span {
 }
 
 #mobile-nav ul li a:hover {
-  color: #9e0059;
+  color: #450d87;
 }
 
 #mobile-nav ul li #indir_butonu{
-  background-color:#30d5c8;
+  background-color:#00b7b3;
   color: rgb(255, 255, 255);
 }
 
 #mobile-nav ul li #indir_butonu:hover{
-  background-color:#9e0059;
+  background-color:#450d87;
   color: white;
 }
 
@@ -416,11 +416,11 @@ span {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #9e0059;
+  color: #450d87;
 }
 
 #mobile-nav ul .menu-active a {
-  color: #9e0059;
+  color: #450d87;
 }
 
 #mobile-body-overly {
@@ -444,7 +444,7 @@ body.mobile-nav-active #mobile-nav {
 }
 
 body.mobile-nav-active #mobile-nav-toggle i {
-  color: #9e0059;
+  color: #450d87;
 }
 
 /*--------------------------------------------------------------
@@ -759,14 +759,14 @@ section {
 }
 
 #pricing .block-pricing .table .table_btn a {
-  background: #30d5c8;
+  background: #00b7b3;
   color: #fff;
   margin: 0;
   display: inline-block;
 }
 
 #pricing .block-pricing .table .table_btn a:hover {
-  background: #9e0059;
+  background: #450d87;
 }
 
 #pricing .block-pricing .table .table_btn a .fa {
@@ -798,13 +798,13 @@ section {
 
 #contact .info i {
   font-size: 32px;
-  color: #30d5c8;
+  color: #00b7b3;
   
 }
 
 #contact .info i:hover {
   font-size: 32px;
-  color: #9e0059;
+  color: #450d87;
   
 }
 
@@ -826,7 +826,7 @@ section {
 #contact .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #30d5c8;
+  background: #00b7b3;
   color: #fff;
   line-height: 1;
   padding: 6px 0 8px 0;
@@ -838,7 +838,7 @@ section {
 }
 
 #contact .social-links a:hover {
-  background: #9e0059;
+  background: #450d87;
   color: #fff;
 }
 
@@ -866,7 +866,7 @@ section {
 #contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #30d5c8;
+  background: #00b7b3;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -886,7 +886,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #30d5c8;
+  border: 3px solid #00b7b3;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -899,7 +899,7 @@ section {
 }
 
 #contact .php-email-form input:focus, #contact .php-email-form textarea::focus {
-  background-color: #9e0059;
+  background-color: #450d87;
 }
 
 #contact .php-email-form input {
@@ -911,7 +911,7 @@ section {
 }
 
 #contact .php-email-form button[type="submit"] {
-  background: #30d5c8;
+  background: #00b7b3;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -919,7 +919,7 @@ section {
 }
 
 #contact .php-email-form button[type="submit"]:hover {
-  background: #9e0059;
+  background: #450d87;
 }
 
 
@@ -999,12 +999,12 @@ section {
 
 .footer .copyrights p a, .footer .copyrights .credits a {
   letter-spacing: 0;
-  color: #9e0059;
+  color: #450d87;
 }
 
 .footer .copyrights p a, .footer .copyrights .credits a:hover {
   letter-spacing: 0;
-  color: #30d5c8;
+  color: #00b7b3;
 }
 
 /*--------------------------------------------------------------
@@ -1197,13 +1197,13 @@ section {
 /* İndir Butonu */
 
 #indir_butonu{
-  background-color:#30d5c8;
+  background-color:#00b7b3;
   color: white;
   font-size:medium;
 }
 
 #indir_butonu:hover{
-  background-color:#9e0059;
+  background-color:#450d87;
   color: rgb(255, 255, 255);
 }
 
@@ -1724,31 +1724,31 @@ section {
 /* iletişimin navbar hover ı */
 
 #iletisim-id a{
-color:#9e0059;
+color:#450d87;
 font-weight: bold;
 }
 
 
 
 #features-id a {
-  color: #9e0059;
+  color: #450d87;
   font-weight: bold;
 }
 
 /* Blog button */
 
 #blog-id a {
-  color: #9e0059;
+  color: #450d87;
   font-weight: bold;
 }
 
 #blog-button {
-  background-color:#30d5c8;
+  background-color:#00b7b3;
   color: white;
 }
 
 #blog-button:hover {
-  background-color:#9e0059;
+  background-color:#450d87;
   color: white;
 }
 
@@ -1761,16 +1761,16 @@ font-weight: bold;
 /* Support */
 
 #support-id a {
-  color: #9e0059;
+  color: #450d87;
   font-weight: bold;
 }
 
 #support-button {
-  background-color: #30d5c8;
+  background-color: #00b7b3;
 }
 
 #support-button:hover {
-  background-color:#9e0059;
+  background-color:#450d87;
   color: white;
 }
 
@@ -1782,7 +1782,7 @@ font-weight: bold;
 }
 
 #testimonials .testimonials-content::before {
-  color: #30d5c8;
+  color: #00b7b3;
   content: "";
   display: inline-block;
   font: 70px/1 FontAwesome;
@@ -1826,7 +1826,7 @@ font-weight: bold;
 }
 
 #testimonials .btm-btm .active {
-  background: #30d5c8;
+  background: #00b7b3;
 }
 
 .carousel-indicators {
@@ -1852,7 +1852,7 @@ font-weight: bold;
 /* features Sayfası */
 
 #card{
-background-color: #30d5c8;
+background-color: #00b7b3;
 text-align: center;
 font-size: 13px;
 font-weight: bold;
@@ -1860,7 +1860,7 @@ color: white;
 border-radius: 10px;
 }
 #card:hover{
-background-color: #9e0059;
+background-color: #450d87;
 color: #fff;
 }
 
@@ -1885,13 +1885,13 @@ color: white;
 
 
 #hemenindir{
-  background-color:#30d5c8;
+  background-color:#00b7b3;
   color: white;
   font-size:medium;
   border-radius: 25px;
 }
 
 #hemenindir:hover{
-  background-color:#9e0059;
+  background-color:#450d87;
   color: rgb(255, 255, 255);
 }
