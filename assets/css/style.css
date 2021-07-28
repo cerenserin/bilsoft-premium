@@ -1196,13 +1196,13 @@ section {
 
 /* İndir Butonu */
 
-#indir_butonu{
+#indir{
   background-color:#00b7b3;
   color: white;
   font-size:medium;
 }
 
-#indir_butonu:hover{
+#indir:hover{
   background-color:#450d87;
   color: rgb(255, 255, 255);
 }
