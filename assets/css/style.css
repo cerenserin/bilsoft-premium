@@ -758,18 +758,18 @@ section {
   color: #3c4857;
 }
 
-#pricing .block-pricing .table .table_btn a {
+#pricing .table_btn a {
   background: #00b7b3;
   color: #fff;
   margin: 0;
   display: inline-block;
 }
 
-#pricing .block-pricing .table .table_btn a:hover {
+#pricing .table_btn a:hover {
   background: #450d87;
 }
 
-#pricing .block-pricing .table .table_btn a .fa {
+#pricing .table_btn a .fa {
   font-size: 13px;
   margin-right: 5px;
 }
@@ -1910,3 +1910,4 @@ color: white;
   background-color:#00b7b3;
   color: rgb(255, 255, 255);
 }
+
