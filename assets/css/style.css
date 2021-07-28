@@ -1895,3 +1895,18 @@ color: white;
   background-color:#450d87;
   color: rgb(255, 255, 255);
 }
+
+/* Demo Kullan */
+
+
+#demo{
+  background-color:#450d87;
+  color: white;
+  font-size:medium;
+  border-radius: 25px;
+}
+
+#demo:hover{
+  background-color:#00b7b3;
+  color: rgb(255, 255, 255);
+}
