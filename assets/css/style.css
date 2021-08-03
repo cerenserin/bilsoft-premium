@@ -1849,30 +1849,6 @@ font-weight: bold;
   margin: 0;
 }
 
-/* features Sayfası */
-
-#card{
-background-color: #00b7b3;
-text-align: center;
-font-size: 13px;
-font-weight: bold;
-color: white;
-border-radius: 10px;
-}
-#card:hover{
-background-color: #450d87;
-color: #fff;
-}
-
-#card a{
-color: white;
-
-}
-
-#cızgı {
-  border-left: 3px solid gray;
-  height:unset;
-}
 
 /* SUPPORT */
 
@@ -1910,4 +1886,145 @@ color: white;
   background-color:#00b7b3;
   color: rgb(255, 255, 255);
 }
+
+/*--------------------RESPONSIVE SIDEBAR SUBMENUS-------------------------------*/
+.but_efatura {
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #edf9ff;
+  border-top: 1px solid #909090;
+  border-left: 1px solid #909090;
+  border-radius: 5px;
+}
+
+.but_hizlisatis {
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #fff6ed;
+  border-left: 1px solid #909090;
+  border-radius: 5px;
+}
+
+.but_barkod {
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #edfff3;
+  border-left: 1px solid #909090;
+  border-radius: 5px;
+}
+
+.but_yedekleme {
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #ffedee;
+  border-left: 1px solid #909090;
+  border-radius: 5px;
+}
+
+.but_stokRisk {
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #fbedff;
+  border-left: 1px solid #909090;
+  border-radius: 5px;
+}
+
+.but_etahsilat {
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #ffedf7;
+  border-left: 1px solid #909090;
+  border-radius: 5px;
+}
+
+.but_teklif {
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #edf9ff;
+  border-left: 1px solid #909090;
+  border-radius: 5px;
+}
+
+.but_personel {
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #fff6ed;
+  border-left: 1px solid #909090;
+  border-radius: 5px;
+}
+
+.but_vade {
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px;
+  background: #edfff3;
+  border-bottom: 1px solid #909090;
+  border-left: 1px solid #909090;
+  border-radius: 5px;
+}
+
+
+/*--------------------------------------------------------------
+# Details
+--------------------------------------------------------------*/
+.details .content + .content {
+  margin-top: 100px;
+}
+
+.details .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color:#47287e ;
+}
+
+.details .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details .content li {
+  list-style: square;
+  padding: 0;
+  font-size: 18px;
+  color: #505050;
+  font-weight: 100;
+  letter-spacing:normal;
+  line-height: 30px;
+  text-transform:none;
+}
+
+  .details .content ul li {
+      padding-bottom: 10px;
+  }
+
+  .details .content ul i {
+      font-size: 20px;
+      padding-right: 4px;
+     
+  }
+
+.details .content p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+
 

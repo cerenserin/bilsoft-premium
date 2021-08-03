@@ -50,21 +50,13 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
 </head>
-<style>
-  h3 {
-    color: black
-  }
-
-  p {
-    color: darkslategrey;
-  }
-</style>
-
 
 <body>
+
   <!-- ======= Header ======= -->
-  <header id="header" class="header">
-    <div class="container">
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
       <div id="logo" class="pull-left">
         <!-- <a href="index.html"> <img src="/assets/img/bilsoft logo11-02.png" alt="" title=""/></a> -->
         <!-- Uncomment below if you prefer to use an image logo -->
@@ -74,710 +66,453 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a class="btn btn-lg" id="indir_butonu"
-              href="http://bilsoft.net/uye_giris.aspx?ReturnUrl=%2fodeme.aspx%3ftutar%3d2750%26aciklama%3d2021%2520Kampanya%25201-Premium%2520Mega%2520Kampanyasi">İNDİR</a>
-          </li>
+
           <li><a href="index.html">Ana Sayfa</a></li>
           <li><a href="index.html">Hakkında</a></li>
 
           <li class="menu-has-children"><a href="#features">Özellikler<i class="material-icons"
-            style="font-size:15px"></i></a>
-        <ul>
-          <li><a href="Features.html#e-fatura_modulu">E-Fatura Programı</a></li>
-          <li><a href="Features.html#hizli_satis_modulu">Hızlı Satış Programı</a></li>
-          <li><a href="Features.html#barkod_listeleri">Barkod Listeleri</a></li>
-          <li><a href="Features.html#otomatik_yedekleme_modulu">Otomatik Yedekleme Modülü</a></li>
-          <li><a href="Features.html#stok_risk_limit_modulu">Stok Risk Limit Modülü</a></li>
-          <li><a href="Features.html#omur_boyu_lisans">Ömür Boyu Lisans</a></li>
-          <li><a href="Features.html#e-tahsilat_sistemi">E-Tahsilat Sistemi</a></li>
-          <li><a href="Features.html#teklif-siparis_modulu">Teklif-Sipariş Modülü</a></li>
-          <li><a href="Features.html#personel_takip">Personel Takip Programı</a></li>
-        </ul>
-      </li>
+                style="font-size:15px"></i></a>
+            <ul>
+              <li><a href="Features.html#e-fatura">E-Fatura Programı</a></li>
+              <li><a href="Features.html#hizli_satis">Hızlı Satış Programı</a></li>
+              <li><a href="Features.html#barkod_listeleri">Barkod Listeleri</a></li>
+              <li><a href="Features.html#otomatik_yedekleme">Otomatik Yedekleme Modülü</a></li>
+              <li><a href="Features.html#stok_risk">Stok Risk Limit Modülü</a></li>
+              <li><a href="Features.html#e-tahsilat">E-Tahsilat Sistemi</a></li>
+              <li><a href="Features.html#teklif-siparis">Teklif-Sipariş Modülü</a></li>
+              <li><a href="Features.html#personel_takip">Personel Takip Programı</a></li>
+              <li><a href="Features.html">Ömür Boyu Lisans</a></li>
+            </ul>
+          </li>
 
           <li><a href="index.html">Kampanyalar</a></li>
           <li><a href="Blog.html">Blog</a></li>
-        
+
           <li><a href="Destek.html">Destek</a></li>
           <li><a href="iletisim.html">İletişim</a></li>
+          <li><a id="hemenindir" class="nav-link scrollto active" style="width: 120%; text-align: center;"
+              href="https://bilsoft.net/uye_giris.aspx?ReturnUrl=%2fodeme.aspx%3ftutar%3d3250%26aciklama%3d%25D6N%2520MUHASEBE%2520PROGRAMI%2520PREMIUM%2520FULL%2520PAKET"
+              target="_blank">Hemen
+              İndir</a></li>
+          <li><a></a></li>
+          <li><a id="demo" class="nav-link scrollto active" style="width: 120%; text-align: center;">Demo Kullan</a>
+          </li>
         </ul>
-      </nav>
-      <!-- #nav-menu-container -->
+      </nav><!-- .navbar -->
+
     </div>
-  </header>
-  <!-- End Header -->
-  <br> <br>
+  </header><!-- End Header -->
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <div class="section-title text-center" style="text-align: center;">
-      <br> <br>
-      <h2 style="text-align: center; margin-top: 50px;">Özellikler</h2>
+
+
+
+
+
+
+  <!--========== BOX ICONS ==========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--========== CSS ==========-->
+  <link rel="stylesheet" href="/Content/css/style.css">
+
+  <title>Responsive sidebar submenus</title>
+  <style>
+    #LinklerSagSabit {
+      width: 11%;
+      position: fixed;
+      left: 101%;
+      top: 16%;
+      z-index: 100000;
+      font-family: Nunito, sans-serif;
+    }
+
+    #LinklerSagSabit a,
+    .LinklerSol a {
+      margin-top: 10px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 1.5em;
+      display: block;
+      box-sizing: border-box;
+      text-align: center;
+      text-decoration: none;
+      font-family: Nunito, sans-serif;
+    }
+
+    @media only screen and (max-width: 1801px) {
+      #LinklerSagSabit a {
+        font-size: 13px !important;
+      }
+    }
+
+    @media only screen and (max-width: 1414px) {
+      #LinklerSagSabit a {
+        font-size: 12px !important;
+      }
+    }
+
+    @media only screen and (max-width: 1337px) {
+      #LinklerSagSabit {
+        left: 81% !important;
+      }
+
+      #LinklerSagSabit a {
+        width: 130% !important;
+        font-size: 12px !important;
+      }
+    }
+
+    @media only screen and (max-width: 1125px) {
+      #LinklerSagSabit a {
+        font-size: 11px !important;
+      }
+    }
+
+    @media only screen and (max-width: 989px) {
+      #LinklerSagSabit {
+        left: 82% !important;
+        width: 12%;
+      }
+
+      #LinklerSagSabit a {
+        width: 132% !important;
+        font-size: 11px !important;
+      }
+    }
+
+    @media only screen and (max-width: 838px) {
+      #LinklerSagSabit {
+        left: 78% !important;
+        width: 15%;
+      }
+
+      #LinklerSagSabit a {
+        width: 132% !important;
+        font-size: 13px !important;
+      }
+    }
+
+    @media only screen and (max-width: 789px) {
+      #LinklerSagSabit {
+        left: 76% !important;
+        width: 17%;
+      }
+    }
+
+    @media only screen and (max-width: 789px) {
+      #LinklerSagSabit {
+        left: 70% !important;
+        width: 21%;
+      }
+    }
+
+    @media only screen and (max-width: 550px) {
+      #LinklerSagSabit {
+        left: 67% !important;
+        width: 24%;
+      }
+    }
+
+    @media only screen and (min-width: 0px)and (max-width: 540px) {
+      #LinklerSagSabit {
+        display: none
+      }
+    }
+  </style>
+
+  <body>
+
+
+
+    <div id="LinklerSagSabit" class="hover-efect" style="left: 88%;">
+
+
+      <a class="but_efatura" href="Features.html#e-fatura">
+        <i class="" style="width: 30px; text-align: center;"></i>&nbsp;E-FATURA
+      </a>
+
+      <a class="but_hizlisatis " href="Features.html#hizli_satis">
+        <i class="" style="width: 30px; text-align: center;"></i>&nbsp;HIZLI SATIŞ
+      </a>
+
+      <a class="but_barkod" href="Features.html#barkod">
+        <i class="" style="width: 30px; text-align: center;"></i>&nbsp;BARKOD LİSTELERİ
+      </a>
+
+      <a class="but_yedekleme" href="Features.html#otomatik_yedekleme">
+        <i class="" style="width: 30px; text-align: center;"></i>&nbsp;OTOMATİK YEDEKLEME
+      </a>
+
+      <a class="but_stokRisk" href="Features.html#stok_risk">
+        <i class="" style="width: 30px; text-align: center;"></i>&nbsp;STOK RİSK LİMİTİ
+      </a>
+
+      <a class="but_etahsilat" href="Features.html#e-tahsilat">
+        <i class="" style="width: 30px; text-align: center;"></i>&nbsp;E-TAHSİLAT
+      </a>
+
+      <a class="but_teklif" href="Features.html#teklif-siparis">
+        <i class="" style="width: 30px; text-align: center;"></i>&nbsp;TEKLİF-SİPARİŞ
+      </a>
+
+      <a class="but_personel" href="Features.html#personel_takip">
+        <i class="" style="width: 30px; text-align: center;"></i>&nbsp;PERSONEL TAKİP
+      </a>
+
+
+
     </div>
 
-    <div class="row">
-      <div class="col-md-3">
-        <ul class="nav-menu list-unstyled">
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#vip_teknik_destek"> VIP Teknik Destek </a></div>
+    <br><br><br><br><br><br> <br>
+
+    <!-- ======= Details Section ======= -->
+    <section id="details" class="details">
+      <div class="container">
+
+        <div class="row content" id="e-fatura">
+          <div class="col-md-4" data-aos="fade-right">
+            <img src="/Content/img/Silinecekler/EFaturaModulu.png" class="img-fluid" alt="">
           </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#omur_boyu_lisans"> Ömür Boyu Lisans </a></div>
+          <div class="col-md-8 pt-4" data-aos="fade-up">
+            <h3>E-FATURA</h3> <br>
+            <p class="font-italic">
+              E-fatura, satıcı ve alıcı arasındaki faturalandırma işleminin Gelir İdaresi Başkanlığı üzerinden dijital
+              ortamda yapıldığı ve faturalarının kâğıda basılmasının gerekli olmadığı elektronik belgedir.
+
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i> Maliyetleriniz azalır. (Kağıt, mürekkep, zarf, postalama, arşivleme ve
+                mutabakat vb.)</li>
+              <li><i class="icofont-check"></i> Faturalarınızı daha hızlı hazırlarsınız. Zamandan tasarruf etmiş
+                olursunuz.</li>
+              <li><i class="icofont-check"></i> Faturalarınızın kaybolma riski olmaz.</li>
+              <li><i class="icofont-check"></i> Tahsilatlarınızı hızlandırırsınız. İstediğiniz zaman eski faturalarınıza
+                rahatlıkla ulaşabilirsiniz.</li>
+              <li><i class="icofont-check"></i> Faturalarınız dijital ortamda arşivlenir. Fatura saklama iş yükü ve
+                maliyetinden kurtulursunuz.</li>
+              <li><i class="icofont-check"></i> Muhasebe sisteminiz ile entegre edebilirsiniz. Çevre dostudur.</li>
+              <li><i class="icofont-check"></i> Müşterilerle ve satıcılarla mutabakat yapmanızı kolaylaştırır..</li>
+            </ul>
+            <p class="font-italic">
+              Bilsoft Premium Mega Muhasebe Programı kullanıcılarına ve Bilsoft Online Muhasebe programı kullanıcıları
+              ücretsiz e-faturaya ve e-arşive geçiş yapabilmektedir. Diğer bir ifadeyle, Online ve Premium Mega muhasebe
+              programlarımızı kullanan müşterilerimizin e-fatura dönüşümleri ücretsiz yapılmaktadır.
+            </p>
           </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#e-fatura_modulu"> E-Fatura Modülü </a></div>
+        </div>
+
+        <div class="row content" id="hizli_satis">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="/Content/img/Silinecekler/HizliSatisProgrami.png" class="img-fluid" alt="">
           </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#otomatik_yedekleme_modulu"> Otomatik Yedekleme Modülü </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#e-tahsilat_sistemi"> E-Tahsilat Sistemi </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#hizli_satis_modulu"> Hızlı Satış Modülü </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#teklif-siapris_modulu"> Teklif-Sipariş Modülü </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#excel_veri_aktarim_modulu"> Excel Veri Aktarım Modülü </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#stok_sayim_modulu"> Stok Sayım Modülü </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#stok_risk_limit_modulu"> Stok Risk Limit Modülü </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#vade_takibi_modulu"> Vade Takibi Modülü </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#personel_takip"> Personel Takip </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#barkod_listeleri"> Barkod Listeleri </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#faturada_doviz_islemi"> Faturada Döviz İşlemi </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#n11_e-ticaret_modulu"> N11.com E-Ticaret Modülü </a></div>
-          </div>
-          <br>
-          <div class="card" id="card">
-            <div class="card-body"> <a href="#ajanda"> Ajanda </a></div>
-          </div>
-        </ul>
-      </div>
-
-
-      <!-- menü bitişi -->
-      <!-- özellik kartları -->
-
-      <div class="col-md-9">
-        <section data-aos="fade-up" data-aos-delay="100" id="vip_teknik_destek">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">VIP Teknik Destek</h3>
-              <p class="card-text"><b>VIP teknik destek paketi, Bilsoft ticari yazılım programları kullanıcılarına
-                  özel
-                  tahsis edilen personeller ile ihtiyaç anında doğrudan iletişime geçerek öncelikli olarak hizmet
-                  almalarına olanak sağlamaktadır.
-                  VIP Teknik Destek Paketi Bilsoft Premium Mega kullanıcılarına 12 ay süreli ve Bilsoft Online (3 yıl)
-                  kullanıcılarına 3 yıl süreli hediye olarak tanımlanmaktadır.</b></p>
-            </div>
-          </div>
-        </section>
-        <br><br>
-        <section id="omur_boyu_lisans">
-          <div class="card">
-            <div class="card-body">
-
-              <h3 class="card-title">Ömür Boyu Lisans</h3>
-              <p class="card-text"><b>Paketiniz bir bilgisayara kurulur ve aktive ettiğiniz tarihten itibaren programı
-                  tek
-                  kullanıcı hiç bir sınırlama olmadan ömür boyu kullanma hakkına sahip olur.
-                  Çoklu kullanıcılar için iletişime geçmeniz yeterli.
-                  Ömür boyu lisanslı programlar online ya da mobil aygıtlarda (çevrimiçi) kullanılamaz. Ömür boyu
-                  lisanlı
-                  programları online kullanma modülü için lütfen iletişime geçiniz.</b></p>
-            </div>
-          </div>
-        </section>
-        <br><br>
-
-        <section id="e-fatura_modulu">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">E-Fatura Modülü</h3>
-              <p class="card-text"><b>Elektronik ortamda hazırlanan faturalara verilen isimdir. Kağıda basılmayan ve
-                  sunucular tarafından alıcı ve satıcıya iletilen e-fatura, ileride tüm firmalar için zorunlu hale
-                  getirilecek. Giderek artan e-fatura kullanıcıları arasına girmek için yeterli sebebiniz var aslında.
-                  Kurumsal işlemlerinizi daha kolay hale getirmek ve tasarruf etmek istiyorsanız e-fatura uygulamasına
-                  geçmelisiniz.</b></p>
-
-
-              <p>E-fatura, içerisinde bir faturada yer alması gereken bilgilerin yer aldığı elektronik ortamda
-                hazırlanan
-                faturalara verilen isimdir. E-fatura, satıcı ve alıcı arasındaki faturalandırma işleminin Gelir
-                İdaresi
-                Başkanlığı üzerinden dijital ortamda yapıldığı ve faturalarının kâğıda basılmasının gerekli olmadığı
-                elektronik belgedir. E-fatura
-                kullanarak kâğıt, basım, zarf, gönderim ve arşivleme gibi klasik faturalama masraflarınızdan
-                kurtulabilir
-                ve e-faturalarınızı anında karşı tarafa ulaştırabilirsiniz. E-fatura programı, Bilsoft yazılımın
-                sunduğu
-                Premium muhasebe programının yanı sıra ücretsiz ön muhasebe programıyla da entegre şekilde
-                çalışmaktadır.
-                Böylelikle, hem cari işlemlerinizi takip edebilir hem de fatura işlemlerinizi gerçekleştirebilirsiniz.
-                Ayrıca, Bilsoft Premium Mega Muhasebe Programı kullanıcılarına ve Bilsoft Online Muhasebe programı
-                kullanıcıları ücretsiz e-faturaya ve e-arşive geçiş yapabilmektedir. Diğer bir ifadeyle, Online ve
-                Premium
-                Mega muhasebe programlarımızı kullanan müşterilerimizin e-fatura dönüşümleri ücretsiz yapılmaktadır.
-              </p>
-
-              <p><b>Kimler e-Fatura Kullanabilir? Kimler için kullanımı zorunludur?</b></p>
-
-              <p> E-faturanın avantajlarından
-                yararlanmak isteyen herkes e-fatura sistemini kullanabilir. Madeni yağ lisansına sahip ya da bu
-                firmalardan mal alıp yıllık satış tutarı 25 milyon TL üzerinde olan firmalar; ve ÖTV’ye tabi kolalı
-                gazoz,
-                alkollü içecek ya da tütün üreten ya da ithal eden firmalar ve bu firmalardan mal alıp yıllık satış
-                tutarı
-                da 10 milyon TL üzerinde olan firmaların e-Fatura’ya geçiş zorunluluğu bulunmaktadır.
-              </p>
-
-              <h5>Avantajları</h5> <br>
-              <li>Maliyetleriniz azalır. (Kağıt, mürekkep, zarf, postalama, arşivleme ve mutabakat vb.)</li>
-              <li>Faturalarınızı daha hızlı hazırlarsınız. Zamandan tasarruf etmiş olursunuz.</li>
-              <li>Faturalarınızın kaybolma riski olmaz.</li>
-              <li>Tahsilatlarınızı hızlandırırsınız. İstediğiniz zaman eski faturalarınıza rahatlıkla ulaşabilirsiniz.
-              </li>
-              <li>Faturalarınız dijital ortamda arşivlenir. Fatura saklama iş yükü ve maliyetinden kurtulursunuz.</li>
-              <li>Muhasebe sisteminiz ile entegre edebilirsiniz. Çevre dostudur.</li>
-              <li>Müşterilerle ve satıcılarla mutabakat yapmanızı kolaylaştırır.</li>
-
-            </div>
-          </div>
-        </section>
-        <br><br>
-
-        <section id="otomatik_yedekleme_modulu">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Otomatik Yedekleme Modülü</h3>
-              <p class="card-text"><b>Bilsoft Cari Hesap Programı kullanıcılarının istekleri doğrultusunda hazırlanmış
-                  olan bu program sayesinde artık verilerinizin kaybolmasından korkmanıza gerek kalmayacak.
-                  Programımız
-                  aracılığı ile Bilsoft Cari Takip programınızın veritabanının dilediğiniz an, dilediğiniz adrese
-                  yedeğini
-                  alabilirsiniz. İsterseniz flash diskinize, isterseniz harici hard diskinize yedek alarak
-                  verilerinizi
-                  güvenli bir şekilde saklayabilirsiniz. Ayrıca isterseniz düzenli yedek alma özelliğini kullanarak
-                  programın düzenli yedekler oluşturmasini sağlayabilirsiniz. Bu özellik sayesinde programımız sizin
-                  belirlediğiniz sıklıkta, belirtmiş oldugunuz adrese yedekler alacaktır. Program arka planda size
-                  hiçbir
-                  şekilde rahatsızlık vermeden çalışmaktadir. Bu özellik sayesinde yedek almayı unutmak gibi bir
-                  riskiniz
-                  kalmayacak! Programımızın aynı zamanda oluşturmuş olduğunuz yedekleri Bilsoft Cari Hesap Programı
-                  üzerine geri yükleme özelliği de vardir. Oluşturduğunuz yedekleri geri yüklemek istediğinizde, yedek
-                  dosyasını ve programın yüklü olduğu adresi belirtip "Geri Yükle" butonuna tıkladığınızda yedek
-                  dosyanız
-                  geri yüklenecektir.</b></p>
-
-
-
-              <p>Programımız lisans gerektirmektedir. Bilgisayarınıza indirip demo olarak programı görebilirsiniz.
-                Ancak
-                özellikleri aktif olarak kullanabilmek için programı satın almanız gerekmektedir. Banka bilgilerimize
-                Buraya Tıklayarak Ulaşabilirsiniz. Ödemeyi banka havalesi ile yapmaniz durumunda havale-EFT bildirimi
-                yaparak veya 0212 912 24 26 No'lu müşteri hizmetlerini arıyarak bilgi veriniz.</p>
-              <h5>Program Özellikleri</h5> <br>
-              <li><b>Geri Yükleme</b></li>
-              <p>".bls" uzantılı yedeklerinizi Bilsoft Cari Hesap Programı'nda kullanmak üzere yedekleyebilirsiniz.
-              </p>
-              <li><b>Yedek Oluşturma</b></li>
-              <p>Programı kullanarak dilediğiniz an yedek oluşturabilirsiniz.</p>
-              <li><b>Periyodik Olarak Düzenli Yedekleme</b></li>
-              <p>Düzenli yedeklemeyi ayarlayarak programın sizin belirlediğiniz aralıklarda sizin belirlediğiniz
-                adrese
-                yedek almasini sağlayabilirsiniz. Dilerseniz programın kendi klasörü içine yedek alabilir ya da harici
-                disk veya flash diskinizi yedekleme için kullanabilirsiniz. Yedeklemeyi dilediğiniz zaman başlatıp
-                dilediğiniz zaman durdurabilirsiniz.</p>
-              <li><b>Otomatik Devreye Girme</b></li>
-              <p>Program kurulduktan sonra otomatik çalışmaya başlayacaktır. Bilgisayarınızı yeniden başlatmanız
-                durumunda
-                açılışta otomatik çalışmaya devam edecektir.</p>
-            </div>
-          </div>
-        </section>
-        <br><br>
-
-        <section id="e-tahsilat_sistemi">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">E-Tahsilat Sistemi</h3>
-              <p class="card-text"><b>E-Tahsilat sistemi sanal pos ara yüzü sadece internet bağlantısı ile 7x24 bütün
-                  kredi kartlarından kesintisiz tahsilat sağlayabileceğiniz gelişmiş yazılım çözümüdür. Moka'nın
-                  gelişmiş
-                  güvenlik sistemleri, firmaların tahsilatlarını internet üzerinden 7 gün 24 saat hızlı ve güvenli bir
-                  şekilde yapmalarını sağlar. Moka ile sanal ödemelerinizi filtreleyebilir, detaylarını inceleyebilir
-                  ve
-                  hızlı iade işlemleri gerçekleştirebilirsiniz. Hesaplı satış avantajları ile e-tahsilat programını
-                  hemen
-                  kullanın.</b></p>
-
-
-              <li><b>Hızlı ve güvenli tahsilat:</b> Kredi kartı tahsilatlarınızı kısa sürede gerçekleştirmenizi ve 3D
-                güvenlik hizmeti uygulama bünyesinde mevcuttur.</li>
-
-
-              <li><b>Bilgisayarınızda kullanmanız için internet bağlantısı yeterli:</b> Sanal ödeme işlemlerinizi
-                gerçekleştirmek ve eski işlemlerinizle ilgili süreçleri takip edebilmeniz için sadece internet
-                bağlantısı yeterli.</li>
-
-              <li><b>Bütün kredi kartları için taksitli satış imkânı:</b>Kart ayırt etmeksizin tüm bankalara ait
-                kartlardan taksitli satış gerçekleştirebilirsiniz.</li>
-
-              <li><b>Yabancı kartlar ile işlem yapabilme:</b>Yabancı kart ve para birimleri üzerinden tahsilatlarınızı
-                gerçekleştirebilir iade ve iptal işlemlerinizi kontrol edebilirsiniz.</li>
-
-              <li><b>7x24 kesintisiz tahsilat imkânı:</b>Konum zaman gözetmeksizin her an her yerden ödemelerinizi
-                güven
-                içerisinde e-tahsilat ile tahsil edebilirsiniz.</li>
-
-
-            </div>
-          </div>
-        </section>
-        <br><br>
-
-        <section id="hizli_satis_modulu">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Hızlı Satış Modülü</h3>
-              <p class="card-text"><b>Bilsoft Hızlı Satış Programı, Ön Muhasebe ile entegre çalışan yazılım sizlere
-                  avantaj sağlayacak. Bu çalışma sisteminde tüm stok, kasa giriş-çıkışlarınızı otomatik olarak takip
-                  edin
-                  ve kayıpları azaltın. Basit arayüz ile sizlere hız kazandıracak olan Hızlı Satış Programı ile iş
-                  sürecinizi kolaylaştırın.</b></p>
-
-
-
-              <h5>Program Özellikleri</h5> <br>
-              <li><b>Ön Muhasebe Programıyla Tam Entegrasyon Çalışma</b></li>
-              <p>Bilsoft Ön Muhasebe Programlarıyla tam entegrasyon çalışan Hızlı Satış Programı sizlerin avantajınıza
-                olacaktır. Muhasebe Programı vasıtasıyla kendi bünyenizde gelir-gideri takip etmek kolaylaşacak.
-                Muhasebe
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>HIZLI SATIŞ</h3> <br>
+            <p class="font-italic">
+              Bu çalışma sisteminde tüm stok, kasa giriş-çıkışlarınızı otomatik olarak takip edin ve kayıpları azaltın.
+              Basit arayüz ile sizlere hız kazandıracak olan Hızlı Satış Programı ile iş sürecinizi kolaylaştırın.
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i> <b>Ön Muhasebe Programıyla Tam Entegrasyon Çalışma:</b>Muhasebe
                 Programıyla entegre çalışması sizler için carilerinizi, stoklarınızı, taksitlerinizi, faturalarınızı,
-                çeklerinizi teklif ve siparişlerinizi takip genel anlamıyla program içerisinden de takip
-                edebilirsiniz.
-                Muhasebe Programıyla entegre çalışan Bilsoft Hızlı Satış Ekranı tüm stok takibinizi, satışlarınızı
-                takibini sağlar. Ayrıca Muhasebe Programında entegre olan raporlar sizlere tüm detayı sunacaktır.
-              </p>
-              <li><b>Dokunmatik Ekran Özelliği</b></li>
-              <p>Hızlı satış ekranında perakende satış yapan firmalar için kolaylık sağlayan dokunmatik ekran
-                çalışmasıyla
-                işleriniz hız kazanacak.</p>
-              <li><b>Tek Butonla Nakit Satış</b></li>
-              <p>Hızlı Satış ekranının genel kolay kullanım özelliğiyle sizlere tek tuşla işlemlerinizin
-                gerçekleştirilmesini sağlar. Nakit Satış işlemi gerçekleştirilirken hızlı stok ürün ekleme hızlı para
-                ekleme ve para üstünü görerek işlemlerinizi gerçekleştirebilirsiniz.</p>
-              <li><b>Tek Butonla Kredi Kartı Satışı</b></li>
-              <p>Hızlı Satış ekranının genel kolay kullanım özelliğiyle sizlere tek tuşla işlemlerinizin
-                gerçekleştirilmesini sağlar. Kredi Kartı satış işlemi gerçekleştirilirken hızlı stok ürün ekleme hızlı
-                para ekleme ve para üstünü görerek işlemlerinizi gerçekleştirebilirsiniz.
-              </p>
-              <li><b>Çoklu Ödeme</b></li>
-              <p>Satış ekranınızda müşterilerinizden gelen aynı ödemeleri hem nakit hem kredi kartı ödeme seçeneği ile
-                sizler işleminizi kolay kullanımlı ekranlarımızda hızlandıracaksınız.</p>
-              <li><b>Müşteri Bekletme</b></li>
-              <p>Hızlı Satış yaptığınız sırada farklı müşterileriniz alışverini tamamlamış olabilirler. Bunun için
-                sizlere
-                çözüm sağladık. Birden fazla ödeme ekranı açarak işlemleriniz hız kesmeden tamamlanabilir.</p>
-              <li><b>Kolay Para girişi</b></li>
-              <p>Satışlarınızda müşterilerinizin işlemini tam entegrasyon muhasebe programıyla hızlandırmak için para
-                girişlerinde ister dokunmatik ekran ile ister mouse yardımıyla Hızlı Para seçmenizi sağlar.</p>
-              <li><b>Dokunmatik Hızlı Ürün Ekleme ( 5 Ayrı Grup Tanımlayabilme )</b></li>
-              <p>Program içerisinde ürünlerinizi resim, barkod, stok adı ekleyerek tanımlayabilirsiniz. Ürünler
-                bölümünde
-                5 ayrı gruplandırma ise sizlere avantaj sağlayacaktır.</p>
-              <li><b>Marketlerde Barkod İle Hızlı Satış</b></li>
-              <p>Hızlı satış işlemleri en çok marketler, bakkallar, vb. firmalar için Barkod okuyucu vasıtasıyla
-                sizlere
-                kolaylık sağlayacak.</p>
-              <li><b>Fiş ve Fatura Yazdırabilme</b></li>
-              <p>Hızlı satışlarınızda müşterilerinize anında işlem fişi verebilir veya fatura kesebilirsiniz.</p>
-              <li><b>Ağ üzerinden Çalışma</b></li>
-              <p>Ağ üzerinden birden fazla bilgisayar ile çalışmak sizlerin avantajınıza olacaktır. Hızlı Satışlarınız
-                birden fazla kasadan yapıldığında ağ üzerinden çalışan program vasıtasıyla işlemleriniz anından
-                tamamlanacaktır.</p>
-              <li><b>Para Üstü Takibi</b></li>
-              <p>Kullanıcı tarafından müşterilerden alınan paraların, para üstünü kolaylık ve hızlıca verilmesini
-                ekranda
-                anında gösterilmesidir.</p>
-              <li><b>Para Çekmecesi Bağlantısı</b></li>
-              <p>Hızlı satış ekranıyla bağlantılı para çekmecesi otomatik olarak çalışacaktır. Satışlarınızda anında
-                işlemde para çekmecesi otomatik olarak çalışır ve sizlere güvenlik açısından da avantaj sağlar.</p>
-              <li><b>Yazarkasa Pos</b></li>
-              <p>Yapılan nakit hızlı satış işleminde müşteriniz ile alakalı yazar kasa pos cihazıyla birlikte fiş
-                verebilirsiniz. Ayrıca Kredi kartı ödemesinde yapılan çalışmada işlem bilgisi ardından kredi kartını
-                cihaza okutarak kredi kartı satışınızı da hızlıca gerçekleştirebilirsiniz. Hızlı satış programımız
-                Olivetti Verifone MX-915 yazar kasa pos cihazı ile entegrasyonu sağlanmıştır.</p>
-              <li><b>Barkod Okuyucu Entegre</b></li>
-              <p>Perakende sektörünün en çok ihtiyacı olan Barkod Okuyucu entegre sistemiyle işleriniz hızlansın.</p>
-              <li><b>Müşteri Göstergesi(PosClass)</b></li>
-              <p>Hızlı satış işleminde anında yapılan işlemlerin tüm bilgilerini müşteri ekranında anında gösterilir.
-              </p>
-
-            </div>
+                çeklerinizi teklif ve siparişlerinizi takip genel anlamıyla program içerisinden de takip edebilirsiniz.
+              </li>
+              <li><i class="icofont-check"></i> <b>Dokunmatik Ekran Özelliği:</b>Hızlı satış ekranında perakende satış
+                yapan firmalar için kolaylık sağlayan dokunmatik ekran çalışmasıyla işleriniz hız kazanacak. </li>
+              <li><i class="icofont-check"></i> <b>Tek Butonla Nakit Ve Kredi Kartı Satışı:</b>Tek tuşla, nakit satış
+                işlemi gerçekleştirilirken; hızlı stok ürün ekleme hızlı para ekleme işlemlerinizi ve kredi kartı satış
+                işlemi gerçekleştirilirken; hızlı stok ürün ekleme hızlı para ekleme ve para üstünü görerek
+                işlemlerinizi gerçekleştirebilirsiniz.</li>
+              <li><i class="icofont-check"></i> <b>Çoklu Ödeme:</b>Satış ekranınızda müşterilerinizden gelen aynı
+                ödemeleri hem nakit hem kredi kartı ödeme seçeneği ile sizler işleminizi kolay kullanımlı ekranlarımızda
+                hızlandıracaksınız.</li>
+              <li><i class="icofont-check"></i> <b>Müşteri Bekletme:</b>Hızlı Satış yaptığınız sırada farklı
+                müşterileriniz alışverini tamamlarken birden fazla ödeme ekranı açarak işlemleriniz hız kesmeden
+                tamamlayabilirsiniz. </li>
+              <li><i class="icofont-check"></i> <b>Dokunmatik Hızlı Ürün Ekleme ( 5 Ayrı Grup Tanımlayabilme
+                  ):</b>Program içerisinde ürünlerinizi resim, barkod, stok adı ekleyerek tanımlayabilirsiniz. Ürünler
+                bölümünde 5 ayrı gruplandırma ise sizlere avantaj sağlayacaktır. </li>
+              <li><i class="icofont-check"></i> <b>Barkod Okuyucu Entegre Ve Müşteri Göstergesi(PosClass):</b>Perakende
+                sektörünün en çok ihtiyacı olan Barkod Okuyucu entegre sistemiyle işleriniz hızlanır ayrıca hızlı satış
+                işleminde anında yapılan işlemlerin tüm bilgilerini müşteri ekranında anında gösterilir. </li>
+            </ul>
+            <p class="font-italic">
+              Basit arayüz ile sizlere hız kazandıracak olan Hızlı Satış Programı ile iş sürecinizi kolaylaştırın.
+            </p>
           </div>
-        </section>
-        <br><br>
+        </div>
 
-        <section id="teklif-siparis_modulu">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Teklif-Sipariş Modülü</h3>
-              <p class="card-text"><b>Bilsoft teklif ve sipariş modülü, ön muhasebe programınıza entegre olarak
-                  çalışan
-                  bir modüldür. Modül sayesinde farklı teklifler oluşturabilir, bu teklifleri kayıt altında tutarak en
-                  uygun teklifinizi siparişe döndürebilirsiniz. Siparişlerinizi de faturalandırabilir ve faturanızı
-                  muhasebe programına işleyebilirsiniz. Modül ücretsiz muhasebe programının içerisinde kurulu olarak
-                  gelmektedir. Fakat kullanabilmek için lisans satın almanız gerekmektedir.</b></p>
-
-
-              <li><b>Teklif</b></li>
-              <p>Satış öncesi, müşterilerinizin talebi doğrultusunda indirimli ve özel seçeneklerin tanımlanarak mal
-                veya
-                hizmet için sunabileceğiniz tekliflerin oluşturulduğu modüldür. Müşterinize sunduğunuz teklif kabul
-                gördüğünde, teklifi tek tuşla satış faturasına çevirerek yeniden fatura hazırlama zahmetinden
-                kurtulursunuz.</p>
-              <li><b>Sipariş</b></li>
-              <p>Toptancınızdan aldığınız siparişleri, ek notlar ile birlikte kaydedebileceğiniz sipariş takip
-                modülüdür.
-                Sipariş hazırlandığında, tek tuş ile alış faturasına çevirerek, işlemlerinizi hızlandırabilirsiniz.
-                Sipariş ve Takip Modülü ile neler yapabilirsiniz.</p>
-
-              <p>Müşterilerinizden aldığınız siparişleri kayıt altında tutun. Sipariş bilgileri teslim tarihi sipariş
-                tutarı vb. bilgilere kolaylıkla ulaşabilirsiniz. Siparişiniz onaylandığında faturalandırarak alışınızı
-                gerçekleştirebilirsiniz. Teklif çıktısı oluşturarak müşterinize teklif mektubu sunabilirsiniz.
-                Firmanıza
-                özel teklif tasarımları yapılabilirsiniz. Alınan ve verilen tekliflerin takip süreci (Onay Bekliyor,
-                Onaylandı, Siparişe Dönüştü vb..) Şablonlar ile genel şartlar, ödeme şartları ve özel açıklamalar
-                kullanılarak istenilen şartlara göre hızlı teklif hazırlayabilirsiniz. Barkod okuyucu ile hızlı teklif
-                ve
-                sipariş girişi yapabilirsiniz. Teklif veya sipariş işlemlerinizin detaylı raporunu alabilirsiniz.</p>
-              </p>
-            </div>
+        <div class="row content" id="barkod">
+          <div class="col-md-4" data-aos="fade-right">
+            <img src="/Content/img/Silinecekler/barkod listesi.png" class="img-fluid" alt="">
           </div>
-        </section>
-
-        <br><br>
-        <section id="excel_veri_aktarim_modulu">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Excel Veri Aktarım Modülü</h3>
-              <p class="card-text"><b>Bilsoft Cari Hesap Programı Excel Yedekleme Yardımcısı sayesinde kullanmakta
-                  olduğunuz veritabını excel dökümanı halinde dışarı aktarabilir, aynı zamanda elinizdeki uygun
-                  formatlı
-                  excel dosyalarını programınızın veritabanına dahil edebilirsiniz. Excel Yedekleme Yardımcısını
-                  kullanrak
-                  Bilsoft Cari Hesap programındaki Banka, Cari Gruplar, Cari Kartlar, Stok, Stok Birimleri, Stok
-                  Gruplar
-                  bilgilerinizi Excel dökümanı halinde yedeklemeniz mümkün. Programımız aracılığı ile elinizde bulunan
-                  Excel dökümanlarını hiç zorlanmadan kullanmakta olduğunuz Bilsoft Cari Hesap Programı'na aktarabilir
-                  ve
-                  sorunsuz bir şekilde programı kullanmaya devam edebilirsiniz.</b></p>
-
-
-
-              <h5>Program Özellikleri</h5>
-              <li><b>Excel'e Aktarma</b></li>
-              <p>Kullanmakta olduğunuz Bilsoft Cari Hesap Programı'ndaki bilgileriniz Excel dosyasına
-                aktarabilirsiniz.
-              </p>
-              <li><b>Excel'den Programa Aktarma</b></li>
-              <p>Excel Yedekleme Yardımcısını kullanarak uygun formatlı Excel dökümanlarından kullanmakta olduğunuz
-                Bilsoft Cari Hesap Programına bilgilerinizi aktarabilirsiniz.</p>
-              <li><b>Programın çalışabilmesi için bilgisayarınızda Microsoft Excel programının yüklü olması
-                  gerekmektedir.</b></li>
-              <p>Ürünlerin stok miktar girişleri hızlı birşekilde yapabilirsiniz.</p>
-
-            </div>
+          <div class="col-md-8 pt-5" data-aos="fade-up">
+            <h3>BARKOD LİSTELERİ</h3> <br>
+            <p class="font-italic">
+              Dileyen müşterilerimiz hazır barkod listesini alarak işlemlerine hız katabilirler.
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i>Marketler için güncel 20.000 Adet hazır ürün barkodu mevcuttur.</li>
+              <li><i class="icofont-check"></i>Kırtasiyeler için güncel 10.000 Adet hazır ürün barkodu mevcuttur. </li>
+            </ul>
           </div>
-        </section>
+        </div>
 
-        <br><br>
-        <section id="stok_sayim_modulu">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Stok Sayım Modülü</h3>
-              <p class="card-text"><b>Bilsoft Cari Hesap Programı kullanıcılarının istekleri doğrultusunda hazırlanmış
-                  olan bu program sayesinde artık stok sayım işlemi çok kısa sürede ve güvenli olarak
-                  yapabileceksiniz.
-
-                  Bilsoft Stok Sayım programı stoklarınızı kolay ve hızlı bir şekilde saymanız için hazırlanmıştır. Bu
-                  program ile Bilsoft Cari Takip programındaki ürünlerin bilgilerini güncelleyebilir, Sayım
-                  miktarınızı
-                  girebilir ve programda kayıtlı olmayan ürünleride kolayca ekleyip sayım miktarını girebilirsiniz.
-
-                  Ayrıca arama bölümündeki, stok sayımı yapılan veya yapılmayan filtreleme ile sayım yapılan veya
-                  yapılmayan ürünleri kolayca bulabilirsiniz. Bu özellik sayesinde hangi ürünü sayıp saymadığınızı
-                  göreceksiniz. Sayım işlemini isterseniz barkod okutarak isterseniz Stok Sayım programındaki ürün
-                  tablosundan seçerek hızlı bir şekilde yapabilirsiniz. Bu özellik sayesinde sayım işlemini çok kısa
-                  sürede bitirebileceksiniz.
-
-                  Stok Sayım Programımızın "Diğer ayarlar" bölümü altında Tüm stokları sıfırla, Sayımı yenile ve Hızlı
-                  Stok Miktar işleme özellikleri ile hızlı işlemleri yapabilirsiniz.</b></p>
-
-
-
-              <h5>Program Özellikleri</h5>
-              <li><b>Stok Sayma</b></li>
-              <p>İki yol ile stok sayımı yapabilirsiniz. İsterseniz barkod okutarak isterseniz programın sol
-                tarafındaki
-                tablodan stok seçerekte yapabilirsiniz. Stok seçildikten sonra stok bilgileri gerekli yerleri otomatik
-                olarak dolduracaktır. İstediğiniz bilgileri güncelleyebilir ve stok sayım miktarınızı miktar bölümüne
-                yazıp "Stok Bilgisini Güncelle" butonuna basarak o stoğun sayım işlemini tamamlayabilirsiniz.
-              </p>
-              <li><b>Stok Sayma Stok Ekleme</b></li>
-              <p>Stok Sayım programındaki tabloda ürünü bulamıyorsanız veya barkodu okuttuğunuzda ürün bulunamıyorsa,
-                stok bilgilerini ve sayım miktarını girişini tamamladıktan sonra "Stok Kartına Yeni Ürün Ekle"
-                butonuna
-                basarak yeni stoğunuzu oluşturabilirsiniz.</p>
-              <li><b>Tüm Stoklara Belirli Bir Miktar Ekle</b></li>
-              <p>Stok Sayım programın menüsünden "Diğer Ayarlar" tıkladığınızda, açılan pencerede Hızlı Stok Gir
-                bölümünden istediğiniz miktar kadar tüm stoklara miktar girişi yapabilirsiniz.</p>
-              <li><b>Tüm Stokları Sıfırla - Sayımı Yenile</b></li>
-              <p>Stok Sayım programın menüsünden "Diğer Ayarlar" tıkladığınızda açılan pencereden yapabilirsiniz.</p>
-
-            </div>
+        <div class="row content" id="otomatik_yedekleme">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="/Content/img/Silinecekler/OromatikYedeklemeModulu.png" class="img-fluid" alt="">
           </div>
-        </section>
-        <br><br>
-        <section id="stok_risk_limit_modulu">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Stok Risk Limiti Modülü</h3>
-              <p class="card-text"><b>Bilsoft Cari Hesap Programı kullanıcılarının istekleri doğrultusunda hazırlanmış
-                  olan bu program sayesinde artık stoklarınıza risk limiti belirtebileceksiniz.</b></p>
-
-
-
-              <p>Belirli bir sayının altına düşen stoklarınıza risk limiti belirleyerek elinizdeki stoklarınızın
-                takibini daha sağlıklı bir şekilde gerçekleştirebileceksiniz.
-                Bilsoft Stok Risk Limiti Programı riskli ürünleriniz belirlediğiniz sayının altına düştüğü taktirde mail
-                adresinize bildirir.</p>
-
-            </div>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>OTOMATİK YEDEKLEME</h3> <br>
+            <p class="font-italic">
+              Bilsoft Cari Hesap Programı kullanıcılarının istekleri doğrultusunda hazırlanmış olan bu program sayesinde
+              artık verilerinizin kaybolmasından korkmanıza gerek kalmayacak.
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i> <b>Yedek Olusturma:</b>Programı kullanarak dilediğiniz an yedek
+                oluşturabilirsiniz.</li>
+              <li><i class="icofont-check"></i> <b>Geri Yükleme:</b>".bls" uzantılı yedeklerinizi Bilsoft Cari Hesap
+                Programı'nda kullanmak üzere yedekleyebilirsiniz. </li>
+              <li><i class="icofont-check"></i> <b>Periyodik olarak Düzenli Yedekleme:</b>Düzenli yedeklemeyi
+                ayarlayarak programın sizin belirlediğiniz aralıklarda sizin belirlediğiniz adrese yedek almasini
+                sağlayabilirsiniz. Ayrıca yedeklemeyi istediğiniz zaman başlatıp istediğiniz zaman durdurabilirsiniz.
+              </li>
+              <li><i class="icofont-check"></i> <b>Otomatik Devreye Girmeye:</b>Program kurulduktan sonra otomatik
+                çalışmaya başlayacaktır. Bilgisayarınızı yeniden başlatmanız durumunda açılışta otomatik çalışmaya devam
+                edecektir.</li>
+            </ul>
+            <p>
+              Programımız lisans gerektirmektedir. Bilgisayarınıza indirip demo olarak programı görebilirsiniz. Ancak
+              özellikleri aktif olarak kullanabilmek için programı satın almanız gerekmektedir.
+            </p>
           </div>
-        </section>
-        <br><br>
-        <section id="vade_takibi_modulu">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Vade Takibi Modülü</h3>
-              <p class="card-text"><b>Bilsoft vade takip programı ile vadesi geçen müşterilerinizi takip edebilir, hangi
-                  müşterilerin vadesinde ödeme yapmadıklarını görebilir, açık hesap ve isteyeceğiniz para tutarına göre
-                  görüntüleyebilir, vadesi geçen müşterilerinize ödeme tarihi ile ilgili bilgilendirme maili ve sms
-                  gönderebilirsiniz.
+        </div>
 
-                  Cari hesap ödeme tahsilat takibi için gerekli olan Ödeme planı seçeneği ile açık hesap, taksit, nakit,
-                  senet, çek gibi pek çok seçeneği esnek bir şekilde kullanmak mümkündür. Bu kullanım ile ayrı ayrı
-                  listeler alabilirsiniz.
-
-                  Çek/senet işlemleri dışında vadeli yapılan işlemlerin tümüne ödeme planı bağlanır. Ödemeler bu plana
-                  uygun olarak ödeme listeleri ile takip edilir. Vade tarihi aralığını kendiniz belirleyebilir, tüm
-                  vadeli
-                  işlemleri tek ekranda görebilirsiniz.</b></p>
-
-
-
-              <h5>Program Özellikleri</h5>
-              <li><b>Çek/Senet Takibi</b></li>
-              <p>Listeleme yaparken istediğiniz iki tarih arası, çek durumu, çek türü, çek numarası ve ünvana göre
-                filtreleme yapabilir ve raporlayabilirsiniz. Sayfa altında alınan çek toplamı ve verilen çek toplamı
-                bakiyelerini görüntüleyebilirsiniz.
-              </p>
-              <li><b>Cari Hesap Takibi</b></li>
-              <p>Listeleme yaparken istediğiniz iki tarih arası, ödeme şekli ve ünvana göre filtreleme yapabilir ve
-                raporlayabilirsiniz. Sayfa altında toplam borç ve toplam alacak bakiyelerini görüntüleyebilirsiniz.</p>
-              <li><b>Taksit Takibi</b></li>
-              <p>Listeleme yaparken istediğiniz iki tarih arası, ödeme şekli ve ünvana göre filtreleme yapabilir ve
-                raporlayabilirsiniz. Alınacak toplam taksit bakiyesini görüntüleyebilirsiniz.</p>
-
-            </div>
+        <div class="row content" id="stok_risk">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="/Content/img/Silinecekler/StokRiskLimitModulu.png" class="img-fluid" alt="">
           </div>
-        </section>
-        <br><br>
-        <section id="personel_takip">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Personel Takip</h3>
-              <p class="card-text"><b>Çalışanlar, bir işletmeye değer katar. Çalışan memnuniyetinin sağlanması,
-                  işyerinin
-                  tercih edilmesi ve çalışan ile işyeri arasında uzun soluklu bir ilişki temin edilmesi açısından
-                  önemlidir ve uzun vadede işletmenin başarısını getirir. Çalışana ait bordro işlemlerinin hatasız, tüm
-                  ayrıntıları dikkate alacak şekilde ve hızlı yapılması hem bu işi yapan bölümün işini kolaylaştırır hem
-                  de çalışanların işyerine olan güvenini sağlamlaştırır.</b></p>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>STOK-RİSK LİMİTİ</h3> <br>
+            <p class="font-italic">
 
-              <p>Çalışanlar, bir işletmeye değer katar. Çalışan memnuniyetinin sağlanması, işyerinin tercih edilmesi ve
-                çalışan ile işyeri arasında uzun soluklu bir ilişki temin edilmesi açısından önemlidir ve uzun vadede
-                işletmenin başarısını getirir. Çalışana ait bordro işlemlerinin hatasız, tüm ayrıntıları dikkate alacak
-                şekilde ve hızlı yapılması hem bu işi yapan bölümün işini kolaylaştırır hem de çalışanların işyerine
-                olan
-                güvenini sağlamlaştırır.
-
-                Bilsoft personel modülü ile çalışanlarınıza ait eğitim, maaş hesaplaması, bordrolama sistemi, izin
-                takibi,
-                gelir gider takibinin detaylı kayıt altına alınmasını sağlayarak işlerinizi kolaylaştırıp daha
-                profesyonel
-                ve hatasız yönetim sağlayabilirsiniz.</p>
-
-
-
-              <h5>Program Özellikleri</h5>
-              <li><b>Yeni personel</b></li>
-              <p>Dilediğiniz kadar personel ekleyebilir personelin genel bilgilerini, iletişim ve aile bilgilerini
-                buradan
-                ekleyebilir ve güncelleyebilirsiniz.
-              </p>
-              <li><b>Personel Resim Ekleme</b></li>
-              <p>İsim soy isim benzerliğinden dolayı personel kayıtlarını karıştırabilirsiniz. Bunun önüne geçebilmek
-                için
-                personellerinizin profil resimlerini sisteme ekleyerek görüntüleme sağlayıp karışıklığı
-                giderebilirsiniz.
-              </p>
-              <li><b>Personel Dosya Ekleme</b></li>
-              <p>Personelinizin Hizmet Belgesi, İşe Giriş Bildirgesi, İşçi Bildirim Listesi, Vizite kâğıdı ve Sağlık
-                Belgesi, Eksik Gün Bildirim formu, İşten Ayrılma Bildirgesi vb. tüm resmi raporları dosya olarak sisteme
-                ekleyerek kayıt altına alabilirsiniz.</p>
-              <li><b>Personel Notları</b></li>
-              <p>Personellerinize özel olarak onların kişilikleri, farklı özellikleri ve istediğiniz not türlerinde
-                detayları bilgiler ekleyebilirsiniz.</p>
-              <li><b>Personel izinleri</b></li>
-              <p>Personellerinin izinlerinin kayıtlı olduğu yerdir. İzin türleri esnek bir şekilde
-                değiştirilebilmektedir.
-                Başlangıç tarihi bitiş tarihi ve iş başı yaptığı tarihler girilerek personellerin izinleri takip edilir.
-                Böylelikle personelinizin izin sürelerini raporlayabilirsiniz.</p>
-
-            </div>
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i> Stoklarınıza risk limiti belirtebilirsiniz.</li>
+              <li><i class="icofont-check"></i> Belirli bir sayının altına düşen stoklarınıza risk limiti belirleyerek
+                elinizdeki stoklarınızın takibini daha sağlıklı bir şekilde gerçekleştirebileceksiniz. </li>
+              <li><i class="icofont-check"></i> Düzenli yedeklemeyi ayarlayarak programın sizin belirlediğiniz
+                aralıklarda sizin belirlediğiniz adrese yedek almasini sağlayabilirsiniz. Ayrıca yedeklemeyi istediğiniz
+                zaman başlatıp istediğiniz zaman durdurabilirsiniz.</li>
+              <li><i class="icofont-check"></i> Bilsoft Stok Risk Limiti Programı riskli ürünleriniz belirlediğiniz
+                sayının altına düştüğü taktirde mail adresinize bildirir.</li>
+            </ul>
           </div>
-        </section>
+        </div>
 
-        <br><br>
-        <section id="barkod_listeleri">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Barkod Listeleri</h3>
-              <p class="card-text"> Programda market ve kırtasiye listeleri kuruludur.
-                Programda barkod bilgisi vardır. Kategoriler isteğe göre güncelleyebilinir.
-                Diğer kategori işletmelerde alış ve satış işlemlerinde ürün etiket ve fiyatları güncelleme hizmeti
-                pakete
-                dahildir. </p>
-
-            </div>
+        <div class="row content" id="e-tahsilat">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="/Content/img/Silinecekler/moka_odemeform.jpg" class="img-fluid" alt="">
           </div>
-        </section>
-
-        <br> <br>
-        <section id="faturada_doviz_islemi">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Faturada Döviz İşlemi</h3>
-              <p class="card-text"><b>Bilsoft ön muhasebe programlarına entegre olarak çalışan Dolar, Euro ve TL olarak
-                  fatura basan işletmeler için büyük bir kolaylık sağlayan modüldür. Günde bir kez otomatik olarak T.C.
-                  Merkez Bankası'ndan kur çekmektedir.! Dolar, Euro ve TL olarak makbuz basabilirsiniz.</b></p>
-
-              <p>Kısaca yabancı ülkelerin para birimleri olarak tanımlanabilecek olan ve ülkeler arası ticaret
-                işlemlerinde kullanılan döviz, günümüzde hem büyük hem de küçük yatırımcılar tarafından sık tercih
-                edilen
-                yatırım araçlarından bir tanesidir.
-
-                Bilsoft Döviz Modülü ile işlemlerinizi güncel döviz kurlarıyla çevrimini yapabilir fatura ve makbuz
-                kesebilirsiniz.
-                0212 912 2426 MüşteriHizmetlerini arayarak konu hakkında detaylı bilgi alabilirsiniz.</p>
-
-            </div>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>E-TAHSİLAT</h3> <br>
+            <p class="font-italic">
+              Moka sanal pos ara yüzü sadece internet bağlantısı ile 7x24 bütün kredi kartlarından kesintisiz tahsilat
+              sağlayabileceğiniz gelişmiş yazılım çözümüdür.
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i> <b>Hızlı ve güvenli tahsilat:</b>Kredi kartı tahsilatlarınızı kısa
+                sürede gerçekleştirmenizi ve 3D güvenlik hizmeti uygulama bünyesinde mevcuttur.</li>
+              <li><i class="icofont-check"></i> <b>Bilgisayarınızda kullanmanız için internet bağlantısı
+                  yeterli:</b>Sanal ödeme işlemlerinizi gerçekleştirmek ve eski işlemlerinizle ilgili süreçleri takip
+                edebilmeniz için sadece internet bağlantısı yeterli.</li>
+              <li><i class="icofont-check"></i> <b>Bütün kredi kartları için taksitli satış imkânı:</b>Kart ayırt
+                etmeksizin tüm bankalara ait kartlardan taksitli satış gerçekleştirebilirsiniz.</li>
+              <li><i class="icofont-check"></i><b>Yabancı kartlar ile işlem yapabilme:</b>Yabancı kartlar ile işlem
+                yapabilme: Yabancı kart ve para birimleri üzerinden tahsilatlarınızı gerçekleştirebilir iade ve iptal
+                işlemlerinizi kontrol edebilirsiniz.</li>
+              <li><i class="icofont-check"></i><b>7x24 kesintisiz tahsilat imkânı:</b> Konum zaman gözetmeksizin her an
+                her yerden ödemelerinizi güven içerisinde tahsil edebilirsiniz.</li>
+            </ul>
           </div>
-        </section>
+        </div>
 
-        <br><br>
-        <section id="n11_e-ticaret_modulu">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">N11.com E-Ticaret Modülü</h3>
-              <p class="card-text"><b>Bilsoft ön muhasebe programlarına entegre olarak çalışan Bilsoft N11 entegratörü
-                  aracılığı ile N11 üzerinden gelen siparişlerinizi kontrol etmeniz artık çok kolay. N11 üzerinden gelen
-                  siparişlerinizin ön muhasebe programınıza aktarma, faturalandırılma ve güncellenme işlemlerini
-                  otomatik
-                  olarak gerçekleştiren n11 e-ticaret entegratörü ile işlerinizi pratik bir şekilde
-                  halledebilirsiniz.</b>
-              </p>
-
-
-              <h5>Program Özellikleri</h5>
-              <li>N11 entegratör modülü sipariş durumu ve tarihine göre filtreleme gerçekleştirmenize elverişli olarak
-                geliştirilmiştir.</li>
-              <li>Yeni gelen siparişlerinizi onaylama işlemini doğrudan program üzerinden gerçekleştirebilirsiniz.</li>
-              <li>Seçili iptal ile gelen sipariş kalemleri içerisinden belirlediğiniz sipariş kalemlerini iptal etmenize
-                olanak sağlamaktadır.</li>
-              <li>Çoklu onaylama sayesinde gün içerisinde tarafınıza ulaşan siparişlerinizden seçili olanları toplu
-                olarak
-                onaylamaktadır.</li>
-              <li>Kargolama işlemini entegratör aracılığı ile hızlı, kolay ve pratik yoldan çözebilirisiniz.</li>
-              <li>İşlem durumu gözetmeksizin siparişinizi doğrudan ön muhasebe programına aktarabilir üzerinde
-                düzenlemelerde bulunabilirsiniz.</li>
-            </div>
+        <div class="row content" id="teklif-siparis">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="/Content/img/Silinecekler/teklifsiparis.jpg" class="img-fluid" alt="">
           </div>
-        </section>
-
-        <br><br>
-        <section data-aos="fade-up" data-aos-delay="100" id="ajanda">
-          <div class="card">
-            <div class="card-body">
-              <h3 class="card-title">Ajanda</h3>
-              <p class="card-text"><b>Hatırlamak istediğiniz tüm işlerinizi tam zamanında size hem görsel hem işitsel
-                  uyarı sistemi ile hatırlatacaktır.</b></p>
-
-              <p>Ayrıca periyodik olarak gün, hafta, ay ve yıl bazında yaptığınız işlerinizi de tek bir seferde kayıt
-                altına alabilir, hatırlatılacak işlerinizi kategorilere ayırabilirsiniz. Hafta sonuna denk gelen
-                işlerinizi ajanda modülü haftanın ilk iş günü size hatırlatacak.
-
-                Dilerseniz periyodik hatırlatma sistemi ile işlerinizin her gün veya her saat hatırlatılmasını
-                sağlayabilirsiniz. Carilerinizin borç alacak durumunu anında gösterir ve bütün cari işlemlerini kontrol
-                altına alır. Örneğin: Size yapılacak ödemeler ya da sizin yapacağınız ödemelerin takibini kolaylaştırır.
-
-                Program açıkken oluşturduğunuz tarih ve saat diliminde otomatik olarak ekrana hatırlatmalarınıza ait
-                uyarı
-                penceresi açılacaktır.Bu uyarı sayesinde müşterilerinize geri dönüş sağlayıp hatırlatmanızı
-                yapabilirsiniz
-                hem cari kartı bazındahem de tüm taksitler bazında taksit takibi yapabilirsiniz.</p>
-
-            </div>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>TEKLİF-SİPARİŞ</h3> <br>
+            <p class="font-italic">
+              Bilsoft teklif ve sipariş modülü, ön muhasebe programınıza entegre olarak çalışan bir modüldür.
+              Modül sayesinde farklı teklifler oluşturabilir, bu teklifleri kayıt altında tutarak en uygun teklifinizi
+              siparişe döndürebilirsiniz.
+              Siparişlerinizi de faturalandırabilir ve faturanızı muhasebe programına işleyebilirsiniz.
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i> <b>Teklif:</b>Satış öncesi, müşterilerinizin talebi doğrultusunda
+                indirimli ve özel seçeneklerin tanımlanarak mal veya hizmet için sunabileceğiniz tekliflerin
+                oluşturulduğu modüldür. Müşterinize sunduğunuz teklif kabul gördüğünde, teklifi tek tuşla satış
+                faturasına çevirerek yeniden fatura hazırlama zahmetinden kurtulursunuz.</li>
+              <li><i class="icofont-check"></i> <b>Sipariş:</b>Toptancınızdan aldığınız siparişleri, ek notlar ile
+                birlikte kaydedebileceğiniz sipariş takip modülüdür. Sipariş hazırlandığında, tek tuş ile alış
+                faturasına çevirerek, işlemlerinizi hızlandırabilirsiniz. Sipariş ve Takip Modülü ile neler
+                yapabilirsiniz. </li>
+            </ul>
+            <p>
+              Müşterilerinizden aldığınız siparişleri kayıt altında tutun. Sipariş bilgileri teslim tarihi sipariş
+              tutarı vb. bilgilere kolaylıkla ulaşabilirsiniz. Siparişiniz onaylandığında faturalandırarak alışınızı
+              gerçekleştirebilirsiniz.
+              Teklif çıktısı oluşturarak müşterinize teklif mektubu sunabilirsiniz.
+              Firmanıza özel teklif tasarımları yapılabilirsiniz.
+              Alınan ve verilen tekliflerin takip süreci (Onay Bekliyor, Onaylandı, Siparişe Dönüştü vb..) Şablonlar ile
+              genel şartlar, ödeme şartları ve özel açıklamalar kullanılarak istenilen şartlara göre hızlı teklif
+              hazırlayabilirsiniz.
+              Barkod okuyucu ile hızlı teklif ve sipariş girişi yapabilirsiniz. Teklif veya sipariş işlemlerinizin
+              detaylı raporunu alabilirsiniz.
+            </p>
           </div>
-        </section>
+        </div>
+
+        <div class="row content" id="personel_takip">
+          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
+            <img src="/Content/img/Silinecekler/personel-takip.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
+            <h3>PERSONEL TAKİBİ</h3> <br>
+            <p class="font-italic">
+              Çalışana ait bordro işlemlerinin hatasız, tüm ayrıntıları dikkate alacak şekilde ve hızlı yapılması hem bu
+              işi yapan bölümün işini kolaylaştırır hem de çalışanların işyerine olan güvenini sağlamlaştırır.
+
+              Bilsoft personel modülü ile çalışanlarınıza ait eğitim, maaş hesaplaması, bordrolama sistemi, izin takibi,
+              gelir gider takibinin detaylı kayıt altına alınmasını sağlayarak işlerinizi kolaylaştırıp daha profesyonel
+              ve hatasız yönetim sağlayabilirsiniz.
+            </p>
+            <ul>
+              <li><i class="icofont-check"></i><b>Yeni personel:</b> Dilediğiniz kadar personel ekleyebilir personelin
+                genel bilgilerini, iletişim ve aile bilgilerini buradan ekleyebilir ve güncelleyebilirsiniz.</li>
+              <li><i class="icofont-check"></i> <b>Personel Resim Ekleme:</b>İsim soy isim benzerliğinden dolayı
+                personel kayıtlarını karıştırabilirsiniz. Bunun önüne geçebilmek için personellerinizin profil
+                resimlerini sisteme ekleyerek görüntüleme sağlayıp karışıklığı giderebilirsiniz. </li>
+              <li><i class="icofont-check"></i> <b>Personel Dosya Ekleme:</b>Personelinizin Hizmet Belgesi, İşe Giriş
+                Bildirgesi, İşçi Bildirim Listesi, Vizite kâğıdı ve Sağlık Belgesi, Eksik Gün Bildirim formu, İşten
+                Ayrılma Bildirgesi vb. tüm resmi raporları dosya olarak sisteme ekleyerek kayıt altına alabilirsiniz.
+              </li>
+              <li><i class="icofont-check"></i> <b>Personel Notları:</b>Personellerinize özel olarak onların
+                kişilikleri, farklı özellikleri ve istediğiniz not türlerinde detayları bilgiler ekleyebilirsiniz.</li>
+              <li><i class="icofont-check"></i> <b>Personel izinleri:</b>Personellerinin izinlerinin kayıtlı olduğu
+                yerdir. İzin türleri esnek bir şekilde değiştirilebilmektedir. Başlangıç tarihi bitiş tarihi ve iş başı
+                yaptığı tarihler girilerek personellerin izinleri takip edilir. Böylelikle personelinizin izin
+                sürelerini raporlayabilirsiniz.</li>
+            </ul>
+          </div>
+        </div>
 
       </div>
-    </div>
-    </section>
-  </div>
-  <br><br><br>
+    </section><!-- End Details Section -->
+
+  </body>
+
   <!-- ======= Footer ======= -->
   <footer class="footer">
     <div class="container">
