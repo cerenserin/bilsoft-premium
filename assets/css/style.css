@@ -393,9 +393,10 @@ span {
   color: #450d87;
 }
 
-#mobile-nav ul li #indir_butonu{
+#mobile-nav ul li #hemenindir{
   background-color:#00b7b3;
   color: rgb(255, 255, 255);
+  
 }
 
 #mobile-nav ul li #indir_butonu:hover{
