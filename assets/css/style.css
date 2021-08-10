@@ -65,6 +65,7 @@ li {
   letter-spacing: 0.5px;
   line-height: 2;
   margin-bottom: 8px;
+  
  
   
 }
@@ -113,7 +114,8 @@ span {
 }
 
 .fa {
-  font-size: 13px;
+  font-size: 14px;
+  
 }
 
 /* Back to top button */
@@ -1345,18 +1347,22 @@ line-height: 0;
   object-fit: cover;
 }
 
-/* İndir Butonu */
+/* İndir Butonu (Banner)*/
 
-#indir{
+
+#indir_banner{
   background-color:#00b7b3;
   color: white;
-  font-size:medium;
+  font-size:13px;
+  left: 295px;
+  top: 700px;
 }
 
-#indir:hover{
+#indir_banner:hover{
   background-color:#450d87;
   color: rgb(255, 255, 255);
 }
+
 
 
 
@@ -1392,12 +1398,12 @@ line-height: 0;
 }
 
 .blog .entry .entry-title a {
-  color: #012970;
+  color: #450d87;
   transition: 0.3s;
 }
 
 .blog .entry .entry-title a:hover {
-  color: #4154f1;
+  color: #00b7b3;
 }
 
 .blog .entry .entry-meta {
@@ -2045,13 +2051,20 @@ font-weight: bold;
     font-family: Nunito, sans-serif;
     color: black;
     padding: 10px 22px 10px 15px;
-    margin: 0px 0px 0px 0px;
-    background: #edf9ff;
-    border-bottom: 1px solid #909090;
-    border-radius: 5px;
+    margin: 0px 0px 0px 0px; 
+    border: 3px solid #00b7b3;
+    border-radius: 12px;
     -webkit-box-shadow: 0 8px 6px -6px #505050;
     -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 8px 6px -6px #505050;
+    box-shadow: 0 5px 6px -6px #505050;
+}
+.but_efatura :hover {
+  
+    background-color:#450d87;
+    color: rgb(255, 255, 255);
+    border: 2px solid #450d87;
+
+  
 }
 
 .but_hizlisatis {
@@ -2059,12 +2072,13 @@ font-weight: bold;
     color: black;
     padding: 10px 22px 10px 15px;
     margin: 0px 0px 0px 0px;
-    background: #fff6ed;
-    border-bottom: 1px solid #909090;
-    border-radius: 5px;
+    background: #ffffff;
+    border: 3px solid #450d87;
+    
+    border-radius: 12px;
     -webkit-box-shadow: 0 8px 6px -6px #505050;
     -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 8px 6px -6px #505050;
+    box-shadow: 0 5px 6px -6px #505050;
 }
 
 .but_barkod {
@@ -2077,7 +2091,7 @@ font-weight: bold;
     border-radius: 5px;
     -webkit-box-shadow: 0 8px 6px -6px #505050;
     -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 8px 6px -6px #505050;
+    box-shadow: 0 6px 6px -6px #505050;
 }
 
 .but_yedekleme {
@@ -2090,7 +2104,7 @@ font-weight: bold;
     border-radius: 5px;
     -webkit-box-shadow: 0 8px 6px -6px #505050;
     -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 8px 6px -6px #505050;
+    box-shadow: 0 6px 6px -6px #505050;
 }
 
 .but_stokRisk {
@@ -2103,7 +2117,7 @@ font-weight: bold;
     border-radius: 5px;
     -webkit-box-shadow: 0 8px 6px -6px #505050;
     -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 8px 6px -6px #505050;
+    box-shadow: 0 6px 6px -6px #505050;
 }
 
 .but_etahsilat {
@@ -2116,7 +2130,7 @@ font-weight: bold;
     border-radius: 5px;
     -webkit-box-shadow: 0 8px 6px -6px #505050;
     -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 8px 6px -6px #505050;
+    box-shadow: 0 6px 6px -6px #505050;
 }
 
 .but_teklif {
@@ -2129,7 +2143,7 @@ font-weight: bold;
     border-radius: 5px;
     -webkit-box-shadow: 0 8px 6px -6px #505050;
     -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 8px 6px -6px #505050;
+    box-shadow: 0 6px 6px -6px #505050;
 }
 
 .but_personel {
@@ -2142,7 +2156,7 @@ font-weight: bold;
     border-radius: 5px;
     -webkit-box-shadow: 0 8px 6px -6px #505050;
     -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 8px 6px -6px #505050;
+    box-shadow: 0 6px 6px -6px #505050;
 }
 
 .but_vade {
@@ -2155,7 +2169,7 @@ font-weight: bold;
     border-radius: 5px;
     -webkit-box-shadow: 0 8px 6px -6px #505050;
     -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 8px 6px -6px #505050;
+    box-shadow: 0 6px 6px -6px #505050;
 }
 
 
@@ -2255,7 +2269,7 @@ font-weight: bold;
     color: white;
     right: 62%;
     left: 7%;
-    margin-top: 90px;
+    
     line-height: 1.5;
     text-align: left;
     font-weight: 300;
