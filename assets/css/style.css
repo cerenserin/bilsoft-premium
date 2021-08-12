@@ -292,7 +292,7 @@ span {
 
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {
   color: #450d87;
-  font-weight: bold;
+  
 }
 
 .nav-menu > li {
