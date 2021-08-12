@@ -2026,9 +2026,9 @@ font-weight: bold;
 }
 
 #hemenindir:hover{
-  background-color:#450d87;
+  background-color:#00b7b3;
   color: rgb(255, 255, 255);
-  border: 2px solid #450d87;
+  border: 2px solid #00b7b3;
 }
 
 /* Demo Kullan */
@@ -2042,8 +2042,9 @@ font-weight: bold;
 }
 
 #demo:hover{
-  background-color:#00b7b3;
+  background-color:#450d87;
   color: rgb(255, 255, 255);
+  border: 2px solid #450d87;
 }
 
 /*--------------------RESPONSIVE SIDEBAR SUBMENUS-------------------------------*/
@@ -2052,7 +2053,7 @@ font-weight: bold;
     color: black;
     padding: 10px 22px 10px 15px;
     margin: 0px 0px 0px 0px; 
-    border: 3px solid #00b7b3;
+    border: 2px solid #00b7b3;
     border-radius: 12px;
     -webkit-box-shadow: 0 8px 6px -6px #505050;
     -moz-box-shadow: 0 8px 6px -6px #505050;
@@ -2068,108 +2069,99 @@ font-weight: bold;
 }
 
 .but_hizlisatis {
-    font-family: Nunito, sans-serif;
-    color: black;
-    padding: 10px 22px 10px 15px;
-    margin: 0px 0px 0px 0px;
-    background: #ffffff;
-    border: 3px solid #450d87;
-    
-    border-radius: 12px;
-    -webkit-box-shadow: 0 8px 6px -6px #505050;
-    -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 5px 6px -6px #505050;
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px; 
+  border: 2px solid #00b7b3;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 8px 6px -6px #505050;
+  -moz-box-shadow: 0 8px 6px -6px #505050;
+  box-shadow: 0 5px 6px -6px #505050;
 }
 
 .but_barkod {
-    font-family: Nunito, sans-serif;
-    color: black;
-    padding: 10px 22px 10px 15px;
-    margin: 0px 0px 0px 0px;
-    background: #edfff3;
-    border-bottom: 1px solid #909090;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 8px 6px -6px #505050;
-    -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 6px 6px -6px #505050;
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px; 
+  border: 2px solid #00b7b3;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 8px 6px -6px #505050;
+  -moz-box-shadow: 0 8px 6px -6px #505050;
+  box-shadow: 0 5px 6px -6px #505050;
 }
 
 .but_yedekleme {
-    font-family: Nunito, sans-serif;
-    color: black;
-    padding: 10px 22px 10px 15px;
-    margin: 0px 0px 0px 0px;
-    background: #ffedee;
-    border-bottom: 1px solid #909090;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 8px 6px -6px #505050;
-    -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 6px 6px -6px #505050;
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px; 
+  border: 2px solid #00b7b3;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 8px 6px -6px #505050;
+  -moz-box-shadow: 0 8px 6px -6px #505050;
+  box-shadow: 0 5px 6px -6px #505050;
 }
 
 .but_stokRisk {
-    font-family: Nunito, sans-serif;
-    color: black;
-    padding: 10px 22px 10px 15px;
-    margin: 0px 0px 0px 0px;
-    background: #fbedff;
-    border-bottom: 1px solid #909090;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 8px 6px -6px #505050;
-    -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 6px 6px -6px #505050;
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px; 
+  border: 2px solid #00b7b3;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 8px 6px -6px #505050;
+  -moz-box-shadow: 0 8px 6px -6px #505050;
+  box-shadow: 0 5px 6px -6px #505050;
 }
 
 .but_etahsilat {
-    font-family: Nunito, sans-serif;
-    color: black;
-    padding: 10px 22px 10px 15px;
-    margin: 0px 0px 0px 0px;
-    background: #ffedf7;
-    border-bottom: 1px solid #909090;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 8px 6px -6px #505050;
-    -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 6px 6px -6px #505050;
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px; 
+  border: 2px solid #00b7b3;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 8px 6px -6px #505050;
+  -moz-box-shadow: 0 8px 6px -6px #505050;
+  box-shadow: 0 5px 6px -6px #505050;
 }
 
 .but_teklif {
-    font-family: Nunito, sans-serif;
-    color: black;
-    padding: 10px 22px 10px 15px;
-    margin: 0px 0px 0px 0px;
-    background: #edf9ff;
-    border-bottom: 1px solid #909090;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 8px 6px -6px #505050;
-    -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 6px 6px -6px #505050;
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px; 
+  border: 2px solid #00b7b3;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 8px 6px -6px #505050;
+  -moz-box-shadow: 0 8px 6px -6px #505050;
+  box-shadow: 0 5px 6px -6px #505050;
 }
 
 .but_personel {
-    font-family: Nunito, sans-serif;
-    color: black;
-    padding: 10px 22px 10px 15px;
-    margin: 0px 0px 0px 0px;
-    background: #fff6ed;
-    border-bottom: 1px solid #909090;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 8px 6px -6px #505050;
-    -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 6px 6px -6px #505050;
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px; 
+  border: 2px solid #00b7b3;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 8px 6px -6px #505050;
+  -moz-box-shadow: 0 8px 6px -6px #505050;
+  box-shadow: 0 5px 6px -6px #505050;
 }
 
 .but_vade {
-    font-family: Nunito, sans-serif;
-    color: black;
-    padding: 10px 22px 10px 15px;
-    margin: 0px 0px 0px 0px;
-    background: #edfff3;
-    border-bottom: 1px solid #909090;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 8px 6px -6px #505050;
-    -moz-box-shadow: 0 8px 6px -6px #505050;
-    box-shadow: 0 6px 6px -6px #505050;
+  font-family: Nunito, sans-serif;
+  color: black;
+  padding: 10px 22px 10px 15px;
+  margin: 0px 0px 0px 0px; 
+  border: 2px solid #00b7b3;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 8px 6px -6px #505050;
+  -moz-box-shadow: 0 8px 6px -6px #505050;
+  box-shadow: 0 5px 6px -6px #505050;
 }
 
 
