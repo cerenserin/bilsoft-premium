@@ -937,6 +937,7 @@ line-height: 0;
   margin-bottom: 20px;
   line-height: 22px;
   font-size: 14px;
+  text-align: left ;
 }
 
 #contact .info .email p {
@@ -1048,6 +1049,8 @@ line-height: 0;
 
 
 
+
+
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1070,84 +1073,193 @@ line-height: 0;
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #2a2c30;
-  padding-top: 20px;
-}
-
-.footer .footer-logo .navbar-brand {
-  color: #fff;
-  display: inline-block;
-  float: none;
-  font-family: "Nunito", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  height: 100%;
-  letter-spacing: 0.2em;
-  padding-left: 0;
-  padding-top: 0;
-}
-
-.footer .footer-logo p {
-  color: #fff;
-  font-size: 12px;
-  letter-spacing: 1px;
-}
-
-.footer .list-menu > h4 {
-  color: #fff;
-  
-}
-
-.footer .list-menu ul li a {
-  color: #fff;
-  font-size: 13px;
-  padding-left: 5px;
-  text-decoration: none;
-  letter-spacing: 0;
-}
-
-.footer .copyrights {
-  background: #fff;
-  margin-top: 30px;
-  text-align: center;
-  padding: 20px;
-}
-
-.footer .copyrights p, .footer .copyrights .credits {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
+  background: #f5f5fb;
+  padding: 0 0 5px 1px;
   font-size: 14px;
-  letter-spacing: 0;
+  color: black;
 }
 
-.footer .copyrights p a, .footer .copyrights .credits a {
-  letter-spacing: 0;
-  color: #450d87;
+  .footer .footer-newsletter {
+      padding: 50px 0;
+      background: #f6f9ff;
+      border-top: 1px solid #e1ecff;
+  }
+
+      .footer .footer-newsletter h4 {
+          font-size: 24px;
+          margin: 0 0 10px 0;
+          padding: 0;
+          line-height: 1;
+          font-weight: 700;
+          color: #47287e;
+      }
+
+      .footer .footer-newsletter form {
+          margin-top: 20px;
+          background: #fff;
+          padding: 6px 10px;
+          position: relative;
+          border-radius: 4px;
+          border: 1px solid #e1ecff;
+      }
+
+          .footer .footer-newsletter form input[type="email"] {
+              border: 0;
+              padding: 8px;
+              width: calc(100% - 140px);
+          }
+
+          .footer .footer-newsletter form input[type="submit"] {
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              border: 0;
+              background: none;
+              font-size: 16px;
+              padding: 0 30px;
+              margin: 3px;
+              background: #22b7b3;
+              color: #fff;
+              transition: 0.3s;
+              border-radius: 4px;
+          }
+
+              .footer .footer-newsletter form input[type="submit"]:hover {
+                  background: #5969f3;
+              }
+
+  .footer .footer-top {
+      background: url(../img/footer-bg.png) no-repeat right top;
+      background-size: contain;
+      border-top: 1px solid #e1ecff;
+      border-bottom: 1px solid #e1ecff;
+      padding: 10px 0 10px 0;
+  }
+
+@media (max-width: 992px) {
+  .footer .footer-top {
+      background-position: center bottom;
+  }
 }
 
-.footer .copyrights p a, .footer .copyrights .credits a:hover {
-  letter-spacing: 0;
-  color: #00b7b3;
+.footer .footer-top .footer-info {
+  margin-top:0px;
+  margin-bottom: 0px;
+  text-decoration:none;
+  text-align:left;
 }
 
-#footer-ozellikler-text {
-  color: white;
-}
+  .footer .footer-top .footer-info .logo {
+      line-height: 0;
+      margin-bottom: 15px;
+      text-align:left;
+  }
+  
 
-.footer .social-links a {
-  font-size: 20px;
+      .footer .footer-top .footer-info .logo img {
+          max-height: 40px;
+          margin-right: 6px;
+      }
+
+      .footer .footer-top .footer-info .logo span {
+          font-size: 30px;
+          font-weight: 700;
+          letter-spacing: 1px;
+          color: #47287e;
+          font-family: "Nunito", sans-serif;
+          margin-top: 3px;
+      }
+
+  .footer .footer-top .footer-info p {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 0;
+      font-family: "Nunito", sans-serif;
+      color: #2d2e29;
+  }
+  
+
+.footer .footer-top .social-links a {
+  font-size: 32px;
   display: inline-block;
-  color: white;
+  color: #00b7b3 ;
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
-
 }
 
-  .footer .social-links a:hover {
-      color: #00b7b3;
+  .footer .footer-top .social-links a:hover {
+      color: #450d87;
   }
+
+.footer .footer-top h4 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #00b7b3;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer .footer-top .footer-links {
+  
+  margin-top:70px;
+}
+
+  .footer .footer-top .footer-links ul {
+      font-size: 18px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  }
+
+      .footer .footer-top .footer-links ul i {
+          padding-right: 2px;
+          color: #d0d4fc;
+          font-size: 12px;
+          line-height: 1px;
+      }
+
+      .footer .footer-top .footer-links ul li {
+          font-size: 16px;
+          padding: 7px 0;
+          display: flex;
+          align-items: center;
+      }
+
+          .footer .footer-top .footer-links ul li:first-child {
+              padding-top: 0;
+          }
+
+      .footer .footer-top .footer-links ul a {
+          color: #2d2e29;
+          transition: 0.3s;
+          display: inline-block;
+          line-height: 5px;
+          font-size: 14px;
+      }
+
+          .footer .footer-top .footer-links ul a:hover {
+              color: #22b7b3;
+              text-decoration:none;
+          }
+
+.footer .footer-top .footer-contact p {
+  line-height: 26px;
+}
+
+.footer .copyright {
+  
+  color: #2d2e29;
+}
+
+.footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #505050;
+}
 
   
 
